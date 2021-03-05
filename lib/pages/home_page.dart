@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kmenu,
-      appBar: (AppBar(
+      appBar: AppBar(
         title: Text(
           'Home',
           style: TextStyle(color: kmaint2),
@@ -43,83 +43,90 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.search),
             onPressed: () {},
           ),
+         
         ],
         foregroundColor: kbox,
-      )),
+      ),
       drawer: Drawer(
         child: Draw(),
       ),
-      body: Center(
-        child: Container(
-          child: GridView(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Center(
+          child: Container(
+            child: Scrollbar(
+              isAlwaysShown: true,
+              child: GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
+                children: [
+                  ProdCard(
+                    img: 'images/PULL3.png',
+                    hint1: 'prod X',
+                    onpress: () {
+                      print('good X');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL2.png',
+                    hint1: 'prod Y',
+                    onpress: () {
+                      print('good Y');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL1.png',
+                    hint1: 'prod Z',
+                    onpress: () {
+                      print('good Z');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL3.png',
+                    hint1: 'prod X',
+                    onpress: () {
+                      print('good X');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL2.png',
+                    hint1: 'prod Y',
+                    onpress: () {
+                      print('good Y');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL1.png',
+                    hint1: 'prod Z',
+                    onpress: () {
+                      print('good Z');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL3.png',
+                    hint1: 'prod X',
+                    onpress: () {
+                      print('good X');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL2.png',
+                    hint1: 'prod Y',
+                    onpress: () {
+                      print('good Y');
+                    },
+                  ),
+                  ProdCard(
+                    img: 'images/PULL1.png',
+                    hint1: 'prod Z',
+                    onpress: () {
+                      print('good Z');
+                    },
+                  ),
+                ],
+              ),
             ),
-            children: [
-              ProdCard(
-                img: 'images/PULL3.png',
-                hint1: 'prod X',
-                onpress: () {
-                  print('good X');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL2.png',
-                hint1: 'prod Y',
-                onpress: () {
-                  print('good Y');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL1.png',
-                hint1: 'prod Z',
-                onpress: () {
-                  print('good Z');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL3.png',
-                hint1: 'prod X',
-                onpress: () {
-                  print('good X');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL2.png',
-                hint1: 'prod Y',
-                onpress: () {
-                  print('good Y');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL1.png',
-                hint1: 'prod Z',
-                onpress: () {
-                  print('good Z');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL3.png',
-                hint1: 'prod X',
-                onpress: () {
-                  print('good X');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL2.png',
-                hint1: 'prod Y',
-                onpress: () {
-                  print('good Y');
-                },
-              ),
-              ProdCard(
-                img: 'images/PULL1.png',
-                hint1: 'prod Z',
-                onpress: () {
-                  print('good Z');
-                },
-              ),
-            ],
           ),
         ),
       ),
