@@ -1,6 +1,6 @@
 {
-    "name": "devlitn_store",
-    "short_name": "devlitn_store",
+    "name": "dvlitn_sql",
+    "short_name": "dvlitn_sql",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
