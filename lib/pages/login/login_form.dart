@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../vars.dart';
 import '../home_page.dart';
 
+
 class LoginForm extends StatefulWidget {
   @override
   _LoginFormState createState() => _LoginFormState();
@@ -13,6 +14,11 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
   String _email, _password;
+
+  Future getData() async {
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
