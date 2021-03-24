@@ -1,4 +1,4 @@
-# dvlitn_sql
+# flutter_django
 
 A new Flutter project.
 
